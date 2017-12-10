@@ -1,0 +1,18 @@
+DISTANCE = 50
+OFFSET = 30
+CV_WIDTH = DISTANCE*8+2*OFFSET
+CV_HEIGHT = DISTANCE*9+2*OFFSET
+IMG_ROOT = 'img/'
+#START_FEN = 'rnbakabnr/9/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/9/RNBAKABNR w - - 0 1'
+START_FEN = 'rnbakabnr/9/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/9/RNBAKABNR'
+FEN_covua = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1'
+NONE, KING, ADVISOR, BISHOP, KNIGHT, ROOK, CANNON, PAWN = 0, 1, 2, 3, 4, 5, 6, 7
+RED, BLACK = 0, 1
+KIND_TABLE = {
+ 'R': ROOK, 'r': ROOK, 'N': KNIGHT, 'n': KNIGHT, 'E': BISHOP, 'e': BISHOP,
+ 'B': BISHOP,  'b': BISHOP, 'A': ADVISOR,  'a': ADVISOR,  'K': KING,
+ 'k': KING,  'P': PAWN,  'p': PAWN,  'C': CANNON,  'c': CANNON, None: None}
+VN_PIECENAME = {
+ ROOK: 'X',  KNIGHT: 'M', BISHOP: 'T',  ADVISOR: 'S', KING: 'Tg', PAWN: 'C', CANNON: 'P', None: None}
+
+
